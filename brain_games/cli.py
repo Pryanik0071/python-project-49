@@ -15,6 +15,7 @@ def run_game(game_message, game):
     for _ in range(rounds_number):
         if not game(name):
             break
+        print('Correct!')
     else:
         print(f'Congratulations, {name}!')
 
