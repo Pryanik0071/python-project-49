@@ -8,8 +8,8 @@ MAX_NUMBER = 100
 ROUNDS_NUMBER = 3
 
 
-def get_random_number():
-    return randint(MIN_NUMBER, MAX_NUMBER)
+def get_random_number(min_number=MIN_NUMBER, max_number=MAX_NUMBER):
+    return randint(min_number, max_number)
 
 
 def check_answer(answer, correct_answer):
