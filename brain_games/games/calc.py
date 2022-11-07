@@ -3,11 +3,11 @@ import operator
 
 import prompt
 
-from brain_games.cli import lose_message, question_message
-from brain_games.funcs import get_random_number
+from brain_games.cli import question_message
+from brain_games.funcs import get_random_number, check_answer
 
 
-def calc(name):  # noqa: C901
+def calc():  # noqa: C901
     operations = {
         '-': operator.sub,
         '+': operator.add,
@@ -18,11 +18,4 @@ def calc(name):  # noqa: C901
     operation = choice(list(operations.keys()))
     question_message(f'{a} {operation} {b}')
     answer = prompt.integer('Your answer: ')
-    if answer != (correct_answer := operations[operation](a, b)):
-        lose_message(
-            answer=answer,
-            correct_answer=correct_answer,
-            name=name
-        )
-        return
-    return True
+    return check_answer(answer, operations[operation](a, b))
