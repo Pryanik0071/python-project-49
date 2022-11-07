@@ -1,9 +1,10 @@
-from random import randint, choice
+from random import choice
 import operator
 
 import prompt
 
-from brain_games.cli import lose_message
+from brain_games.cli import lose_message, question_message
+from brain_games.funcs import get_random_number
 
 
 def calc(name):  # noqa: C901
@@ -12,11 +13,10 @@ def calc(name):  # noqa: C901
         '+': operator.add,
         '*': operator.mul
     }
-    min_number, max_number = 1, 10
-    a = randint(min_number, max_number)
-    b = randint(min_number, max_number)
+    a = get_random_number()
+    b = get_random_number()
     operation = choice(list(operations.keys()))
-    print('Question:', a, operation, b)
+    question_message(f'{a} {operation} {b}')
     answer = prompt.integer('Your answer: ')
     if answer != (correct_answer := operations[operation](a, b)):
         lose_message(

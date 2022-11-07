@@ -1,13 +1,12 @@
-from random import randint
-
 import prompt
 
-from brain_games.cli import lose_message
+from brain_games.cli import lose_message, question_message
+from brain_games.funcs import get_random_number
 
 
 def even(name):
-    min_number, max_number = 1, 399
-    print(f'Question: {(number := randint(min_number, max_number))}')
+    number = get_random_number()
+    question_message(number)
     answer = prompt.string('Your answer: ')
     if answer != (correct_answer := ('yes', 'no')[number % 2]):
         lose_message(

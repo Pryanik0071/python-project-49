@@ -14,6 +14,11 @@ def run_game(game_message, game):
     print(game_message)
     for _ in range(rounds_number):
         if not game(name):
+            # lose_message(
+            #     answer=answer,
+            #     correct_answer=correct_answer,
+            #     name=name
+            # )
             break
         print('Correct!')
     else:
@@ -24,3 +29,7 @@ def lose_message(answer, correct_answer, name):
     print(f"'{answer}' is wrong answer ;(. "
           f"Correct answer was '{correct_answer}'.")
     print(f"Let's try again, {name}!")
+
+
+def question_message(message: str) -> None:
+    print(f"Question: {message}")
