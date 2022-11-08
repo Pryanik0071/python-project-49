@@ -4,10 +4,12 @@ from brain_games.core import (get_random_number,
                               get_random_progression)
 
 
+MIN_LEN = 5
+MAX_LEN = 10
+
+
 def progression():
-    min_len = 5
-    max_len = 10
-    len_progression = get_random_number(min_len, max_len)
+    len_progression = get_random_number(MIN_LEN, MAX_LEN)
     index = get_random_number(0, len_progression - 1)
     progression_list = get_random_progression(len_progression)
     correct_answer = int(progression_list[index])
