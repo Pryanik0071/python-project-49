@@ -13,10 +13,6 @@ def wrong_answer_message(answer, correct_answer):
           f"Correct answer was '{correct_answer}'.")
 
 
-def lose_message(name):
-    print(f"Let's try again, {name}!")
-
-
 def question_message(message):
     print(f"Question: {message}")
 
