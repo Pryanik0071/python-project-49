@@ -42,3 +42,15 @@ def is_prime(number: int) -> True or False:
         if number % _ == 0:
             return False
     return True
+
+
+def get_random_progression(len_: int) -> list:
+    """Returns a random progression of given length"""
+    start = get_random_number()
+    step = get_random_number(1)
+    i = 0
+    progression_list = []
+    while i < len_:
+        progression_list.append(str(start + step * i))
+        i += 1
+    return progression_list
