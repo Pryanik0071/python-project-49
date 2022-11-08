@@ -1,6 +1,4 @@
-import prompt
-
-from brain_games.cli import question_message
+from brain_games.cli import question_message, answer_message
 from brain_games.funcs import get_random_number, check_answer
 
 
@@ -18,5 +16,5 @@ def progression():
     progression_list[index] = '..'
     progression_ = ' '.join([str(_) for _ in progression_list])
     question_message(f'{progression_}')
-    answer = prompt.integer('Your answer: ')
+    answer = answer_message(int)
     return check_answer(answer, int(correct_answer))

@@ -8,11 +8,22 @@ def welcome_user():
     return name
 
 
-def lose_message(answer, correct_answer, name):
+def wrong_answer_message(answer, correct_answer):
     print(f"'{answer}' is wrong answer ;(. "
           f"Correct answer was '{correct_answer}'.")
+
+
+def lose_message(name):
     print(f"Let's try again, {name}!")
 
 
-def question_message(message: str) -> None:
+def question_message(message):
     print(f"Question: {message}")
+
+
+def answer_message(type_):
+    dict_ = {
+        int: prompt.integer,
+        str: prompt.string
+    }
+    return dict_.get(type_)('Test Your answer: ')

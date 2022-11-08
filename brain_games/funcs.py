@@ -1,6 +1,6 @@
 from random import randint
 
-from brain_games.cli import welcome_user, lose_message
+from brain_games.cli import welcome_user, lose_message, wrong_answer_message
 
 
 MIN_NUMBER = 1
@@ -30,11 +30,9 @@ def run_game(game_message, game):
     for _ in range(ROUNDS_NUMBER):
         status = game()
         if not status.get('status'):
-            lose_message(
-                answer=status.get('answer'),
-                correct_answer=status.get('correct_answer'),
-                name=name
-            )
+            wrong_answer_message(status.get('answer'),
+                                 status.get('correct_answer'))
+            lose_message(name)
             break
         print('Correct!')
     else:
