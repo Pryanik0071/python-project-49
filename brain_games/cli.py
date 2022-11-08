@@ -22,7 +22,7 @@ def answer_message(type_):
         int: prompt.integer,
         str: prompt.string
     }
-    return dict_.get(type_)('Test Your answer: ')
+    return dict_.get(type_)('Your answer: ')
 
 
 def end_game_message(status: bool, name: str):
