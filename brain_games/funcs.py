@@ -8,7 +8,9 @@ MAX_NUMBER = 100
 ROUNDS_NUMBER = 3
 
 
-def get_random_number(min_number=MIN_NUMBER, max_number=MAX_NUMBER):
+def get_random_number(min_number: int = MIN_NUMBER,
+                      max_number: int = MAX_NUMBER) -> int:
+    """Return random number from range(min_number to max_number)"""
     return randint(min_number, max_number)
 
 
@@ -39,8 +41,8 @@ def run_game(game_message, game):
         print(f'Congratulations, {name}!')
 
 
-def is_prime(number: int) -> True or None:
-    """Return True, if number is Prime, else return False"""
+def is_prime(number: int) -> True or False:
+    """Return True if number is prime, else return False"""
     for _ in range(2, int(number ** 0.5 + 1)):
         if number % _ == 0:
             return False
