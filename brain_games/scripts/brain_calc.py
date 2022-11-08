@@ -5,10 +5,8 @@ from brain_games.games.calc import calc
 
 def main():
     """brain-calc game"""
-    run_game(
-        'What is the result of the expression?',
-        calc
-    )
+    welcome_message = 'What is the result of the expression?'
+    run_game(welcome_message, calc)
 
 
 if __name__ == '__main__':

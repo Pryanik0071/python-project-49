@@ -5,10 +5,8 @@ from brain_games.games.even import even
 
 def main():
     """brain-even game"""
-    run_game(
-        'Answer "yes" if the number is even, otherwise answer "no".',
-        even
-    )
+    welcome_message = 'Answer "yes" if the number is even, otherwise answer "no".'
+    run_game(welcome_message, even)
 
 
 if __name__ == '__main__':
