@@ -23,3 +23,10 @@ def answer_message(type_):
         str: prompt.string
     }
     return dict_.get(type_)('Test Your answer: ')
+
+
+def end_game_message(status: bool, name: str):
+    if status:
+        print(f"Congratulations, {name}!")
+        return
+    print(f"Let's try again, {name}!")

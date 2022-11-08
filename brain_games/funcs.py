@@ -1,6 +1,8 @@
 from random import randint
 
-from brain_games.cli import welcome_user, wrong_answer_message
+from brain_games.cli import (welcome_user,
+                             wrong_answer_message,
+                             end_game_message)
 
 
 MIN_NUMBER = 1
@@ -10,15 +12,14 @@ ROUNDS_NUMBER = 3
 
 def run_game(game_message: str, game):
     name = welcome_user()
-    out_message = f"Congratulations, {name}!"
+    status = True
     print(game_message)
     for _ in range(ROUNDS_NUMBER):
         status = game()
         if not status:
-            out_message = f"Let's try again, {name}!"
             break
         print('Correct!')
-    print(out_message)
+    end_game_message(status, name)
 
 
 def get_random_number(min_number: int = MIN_NUMBER,
