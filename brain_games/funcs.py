@@ -37,3 +37,11 @@ def run_game(game_message, game):
         print('Correct!')
     else:
         print(f'Congratulations, {name}!')
+
+
+def is_prime(number: int) -> True or None:
+    """Return True, if number is Prime, else return False"""
+    for _ in range(2, int(number ** 0.5 + 1)):
+        if number % _ == 0:
+            return False
+    return True
