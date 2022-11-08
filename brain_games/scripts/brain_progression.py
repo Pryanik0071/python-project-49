@@ -5,8 +5,8 @@ from brain_games.games.progression import progression
 
 def main():
     """brain-progression game"""
-    welcome_message = 'What number is missing in the progression?'
-    run_game(welcome_message, progression)
+    message = 'What number is missing in the progression?'
+    run_game(message, progression)
 
 
 if __name__ == '__main__':

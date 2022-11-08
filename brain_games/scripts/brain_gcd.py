@@ -5,8 +5,8 @@ from brain_games.games.gcd import gcd
 
 def main():
     """brain-gcd game"""
-    welcome_message = 'Find the greatest common divisor of given numbers.'
-    run_game(welcome_message, gcd)
+    message = 'Find the greatest common divisor of given numbers.'
+    run_game(message, gcd)
 
 
 if __name__ == '__main__':
