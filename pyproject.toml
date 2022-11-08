@@ -1,17 +1,22 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Hexlet first project - 5 math console games"
+classifiers = [
+	"Environment :: Console",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Games/Entertainment",
+]
 authors = ["Dmitry <di.mesler.2010@yandex.ru>"]
 readme = "README.md"
 packages = [
 	{ include = "brain_games" },
 ]
+repository = "https://github.com/Pryanik0071/python-project-49"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 prompt = "^0.4.1"
-
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^5.0.4"
