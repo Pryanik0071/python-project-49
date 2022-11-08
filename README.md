@@ -3,8 +3,6 @@
 <a href="https://codeclimate.com/github/Pryanik0071/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/25c0444b0fb1faefd1c7/maintainability" /></a>
 
 # Brain Games
-***
-
 ## Games list:
 <ol>
     <li><b>brain-games</b></li>
@@ -18,8 +16,6 @@
 ## Dependencies:
 + python = "^3.10"
 + prompt = "^0.4.1"
-***
-
 ## Installation:
 ### Clone repository and use poetry:
     git clone https://github.com/Pryanik0071/python-project-49
