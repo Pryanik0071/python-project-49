@@ -13,15 +13,14 @@
     <li><b>brain-prime: </b>Answer "yes" if given number is prime. Otherwise answer "no".</li>
 </ol>
 
-## Dependencies:
+## Tools:
++ poetry
 + python = "^3.10"
-+ prompt = "^0.4.1"
+
 ## Installation:
 ### Clone repository and use poetry:
     git clone https://github.com/Pryanik0071/python-project-49
-    make build
-    make package-install
-
+    make install
 
 ## Examples:
 #### brain-games
