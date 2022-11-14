@@ -4,11 +4,12 @@ from brain_games.core import (get_random_number,
                               get_random_progression)
 
 
+RULES = 'What number is missing in the progression?'
 MIN_LEN = 5
 MAX_LEN = 10
 
 
-def progression():
+def game():
     len_progression = get_random_number(MIN_LEN, MAX_LEN)
     index = get_random_number(0, len_progression - 1)
     progression_list = get_random_progression(len_progression)

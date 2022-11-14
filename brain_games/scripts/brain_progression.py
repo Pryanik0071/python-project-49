@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 from brain_games.core import run_game
-from brain_games.games.progression import progression
+from brain_games.games import progression
 
 
 def main():
-    """brain-progression game"""
-    message = 'What number is missing in the progression?'
-    run_game(message, progression)
+    run_game(progression)
 
 
 if __name__ == '__main__':

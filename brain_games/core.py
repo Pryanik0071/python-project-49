@@ -10,12 +10,12 @@ MAX_NUMBER = 100
 ROUNDS_NUMBER = 3
 
 
-def run_game(game_message: str, game):
+def run_game(game):
     name = welcome_user()
     status = True
-    print(game_message)
+    print(game.RULES)
     for _ in range(ROUNDS_NUMBER):
-        status = game()
+        status = game.game()
         if not status:
             break
         print('Correct!')

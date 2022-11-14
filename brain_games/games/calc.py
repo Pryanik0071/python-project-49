@@ -5,7 +5,10 @@ from brain_games.cli import question_message, answer_message
 from brain_games.core import get_random_number, check_answer
 
 
-def calc():  # noqa: C901
+RULES = 'What is the result of the expression?'
+
+
+def game():
     operations = {
         '-': operator.sub,
         '+': operator.add,
