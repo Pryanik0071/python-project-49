@@ -1,12 +1,11 @@
-from brain_games.cli import question_message, answer_message
-from brain_games.core import get_random_number, check_answer
+from random import randint
 
 
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
 def game():
-    number = get_random_number()
-    question_message(number)
-    answer = answer_message(str)
-    return check_answer(answer, ('yes', 'no')[number % 2])
+    number = randint(MIN_NUMBER, MAX_NUMBER)
+    return number, ('yes', 'no')[number % 2]

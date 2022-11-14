@@ -1,15 +1,13 @@
 from math import gcd as math_gcd
-
-from brain_games.cli import question_message, answer_message
-from brain_games.core import get_random_number, check_answer
+from random import randint
 
 
 RULES = 'Find the greatest common divisor of given numbers.'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
 def game():
-    a = get_random_number()
-    b = get_random_number()
-    question_message(f'{a} {b}')
-    answer = answer_message(int)
-    return check_answer(answer, math_gcd(a, b))
+    a = randint(MIN_NUMBER, MAX_NUMBER)
+    b = randint(MIN_NUMBER, MAX_NUMBER)
+    return f'{a} {b}', str(math_gcd(a, b))
