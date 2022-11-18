@@ -6,6 +6,14 @@ MIN_NUMBER = 1
 MAX_NUMBER = 100
 
 
+def is_even(number: int) -> True or False:
+    """Return True if number is even, else return False"""
+    if number % 2:
+        return False
+    return True
+
+
 def game():
     number = randint(MIN_NUMBER, MAX_NUMBER)
-    return number, ('yes', 'no')[number % 2]
+    correct_answer = 'yes' if is_even(number) else 'no'
+    return str(number), correct_answer
