@@ -22,19 +22,19 @@
 
 ## Examples:
 #### `brain-games`
-[![asciicast](https://asciinema.org/a/r6S8EBauQRqNfeDLjwZPdodtv.svg)](https://asciinema.org/a/r6S8EBauQRqNfeDLjwZPdodtv)
+[![asciicast](https://asciinema.org/a/KFDX4I6XYHCkE1Uu4SHLmtUXw.svg)](https://asciinema.org/a/KFDX4I6XYHCkE1Uu4SHLmtUXw)
 
 #### `brain-even` Win
-[![asciicast](https://asciinema.org/a/fwAQRljrITReGoFw3TgHZs9nL.svg)](https://asciinema.org/a/fwAQRljrITReGoFw3TgHZs9nL)
+[![asciicast](https://asciinema.org/a/e0PWEpltpOpF3MNwQfEqi5nCV.svg)](https://asciinema.org/a/e0PWEpltpOpF3MNwQfEqi5nCV)
 
 #### `brain-calc` Win
-[![asciicast](https://asciinema.org/a/ELUP6E6eQ5mAyUMclHONVCbf3.svg)](https://asciinema.org/a/ELUP6E6eQ5mAyUMclHONVCbf3)
+[![asciicast](https://asciinema.org/a/bM15J9ng4wuiA8a5kz7mBJY95.svg)](https://asciinema.org/a/bM15J9ng4wuiA8a5kz7mBJY95)
 
 #### `brain-gcd` Win
-[![asciicast](https://asciinema.org/a/MhvYKaStKnBaV4eOGPScdhnYR.svg)](https://asciinema.org/a/MhvYKaStKnBaV4eOGPScdhnYR)
+[![asciicast](https://asciinema.org/a/GqIPoGleLdzwBg41gpUbKKNoi.svg)](https://asciinema.org/a/GqIPoGleLdzwBg41gpUbKKNoi)
 
 #### `brain-progression` Win
-[![asciicast](https://asciinema.org/a/VPdescUySGsEPJ0TViVgzg5yc.svg)](https://asciinema.org/a/VPdescUySGsEPJ0TViVgzg5yc)
+[![asciicast](https://asciinema.org/a/rcDPttC8dLGWgECjVVLCpIDHi.svg)](https://asciinema.org/a/rcDPttC8dLGWgECjVVLCpIDHi)
 
 #### `brain-prime` Lose
-[![asciicast](https://asciinema.org/a/ZUBvPAtyD76Qra26XHn6jYBuc.svg)](https://asciinema.org/a/ZUBvPAtyD76Qra26XHn6jYBuc)
+[![asciicast](https://asciinema.org/a/UnavscM2HahLHLBVjQ6ENAiNl.svg)](https://asciinema.org/a/UnavscM2HahLHLBVjQ6ENAiNl)
