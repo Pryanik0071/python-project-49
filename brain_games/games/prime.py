@@ -8,6 +8,8 @@ MAX_NUMBER = 50
 
 def is_prime(number: int) -> True or False:
     """Return True if number is prime, else return False"""
+    if number < 2:
+        return False
     for _ in range(2, int(number ** 0.5 + 1)):
         if number % _ == 0:
             return False
@@ -16,4 +18,5 @@ def is_prime(number: int) -> True or False:
 
 def game():
     number = randint(MIN_NUMBER, MAX_NUMBER)
-    return number, ('no', 'yes')[is_prime(number)]
+    correct_answer = 'yes' if is_prime(number) else 'no'
+    return str(number), correct_answer
