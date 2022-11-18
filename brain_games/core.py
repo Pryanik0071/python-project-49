@@ -7,7 +7,7 @@ ROUNDS_NUMBER = 3
 def run_game(game):
     name = cli.welcome_user()
     status = True
-    print(game.RULES)
+    print(game.RULE)
     for _ in range(ROUNDS_NUMBER):
         question, correct_answer = game.get_question_and_correct_answer()
         print(f'Question: {question}')

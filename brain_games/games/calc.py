@@ -2,7 +2,7 @@ from random import choice, randint
 import operator
 
 
-RULES = 'What is the result of the expression?'
+RULE = 'What is the result of the expression?'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 OPERATIONS = {
