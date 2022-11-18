@@ -17,7 +17,7 @@
 
 ## Installation:
 ### Clone repository and use poetry:
-    1. git clone https://github.com/Pryanik0071/python-project-49
+    git clone https://github.com/Pryanik0071/python-project-49
     make install
 
 ## Examples:
