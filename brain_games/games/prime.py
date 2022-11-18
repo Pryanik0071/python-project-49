@@ -16,7 +16,7 @@ def is_prime(number: int) -> True or False:
     return True
 
 
-def game():
+def get_question_and_correct_answer():
     number = randint(MIN_NUMBER, MAX_NUMBER)
     correct_answer = 'yes' if is_prime(number) else 'no'
     return str(number), correct_answer

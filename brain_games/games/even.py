@@ -11,7 +11,7 @@ def is_even(number: int) -> True or False:
     return not bool(number % 2)
 
 
-def game():
+def get_question_and_correct_answer():
     number = randint(MIN_NUMBER, MAX_NUMBER)
     correct_answer = 'yes' if is_even(number) else 'no'
     return str(number), correct_answer

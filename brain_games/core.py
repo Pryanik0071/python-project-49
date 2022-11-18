@@ -9,7 +9,7 @@ def run_game(game):
     status = True
     print(game.RULES)
     for _ in range(ROUNDS_NUMBER):
-        question, correct_answer = game.game()
+        question, correct_answer = game.get_question_and_correct_answer()
         print(f'Question: {question}')
         if not (status := is_correct_answer(correct_answer)):
             break

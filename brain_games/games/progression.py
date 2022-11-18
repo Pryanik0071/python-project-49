@@ -18,7 +18,7 @@ def get_progression(len_progression: int, start: int, step: int) -> list:
     return progression
 
 
-def game():
+def get_question_and_correct_answer():
     len_progression = randint(MIN_LEN, MAX_LEN)
     start = randint(MIN_NUMBER, MAX_NUMBER)
     step = randint(1, MAX_STEP)
@@ -27,4 +27,4 @@ def game():
     correct_answer = progression[index]
     progression[index] = '..'
     progression_str = ' '.join(progression)
-    return f'{progression_str}', correct_answer
+    return progression_str, correct_answer

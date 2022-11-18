@@ -12,7 +12,7 @@ OPERATIONS = {
 }
 
 
-def game():
+def get_question_and_correct_answer():
     a = randint(MIN_NUMBER, MAX_NUMBER)
     b = randint(MIN_NUMBER, MAX_NUMBER)
     operation = choice(list(OPERATIONS.keys()))
