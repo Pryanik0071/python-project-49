@@ -8,9 +8,7 @@ MAX_NUMBER = 100
 
 def is_even(number: int) -> True or False:
     """Return True if number is even, else return False"""
-    if number % 2:
-        return False
-    return True
+    return not bool(number % 2)
 
 
 def game():
