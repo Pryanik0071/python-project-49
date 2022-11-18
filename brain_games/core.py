@@ -1,14 +1,14 @@
 from brain_games import cli
 
 
-ROUNDS_NUMBER = 3
+NUMBER_OF_ROUNDS = 3
 
 
 def run_game(game):
     name = cli.welcome_user()
     status = True
     print(game.RULE)
-    for _ in range(ROUNDS_NUMBER):
+    for _ in range(NUMBER_OF_ROUNDS):
         question, correct_answer = game.get_question_and_correct_answer()
         print(f'Question: {question}')
         if not (status := is_correct_answer(correct_answer)):
